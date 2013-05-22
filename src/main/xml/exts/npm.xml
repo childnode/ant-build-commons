@@ -197,10 +197,6 @@
         </exec>
 
         <exec executable="${commons.executable.make}" dir="${-npm:in-root}" failonerror="true" >
-            <arg value="submodules" />
-        </exec>
-
-        <exec executable="${commons.executable.make}" dir="${-npm:in-root}" failonerror="true" >
             <arg value="doc" />
         </exec>
     </target>
