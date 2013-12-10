@@ -51,6 +51,7 @@
             <arg value="-l" />
             <fileset dir="${commons.srcdir.php}" erroronmissingdir="false">
                 <include name="**/*.php" />
+                <exclude name="**/vendor/**" />
                 <modified>
                     <param name="cache.cachefile" value="${phplint.cachefile}" />
                 </modified>
@@ -62,6 +63,7 @@
                 <exclude name="**/_code/**" />
                 <exclude name="**/_fixture/**" />
                 <exclude name="**/_fixtures/**" />
+                <exclude name="**/vendor/**" />
                 <modified>
                     <param name="cache.cachefile" value="${phplint.cachefile}" />
                 </modified>
